@@ -1,102 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Dictadores</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <header class="container-fluid">
-      <div class="col-12">
-        <h1>¿A Quien Consideras Dictador?</h1>
-      </div>
-    </header>
-    <main class="container">
-      <div class="row justify-content-center">
-        <div class="col-2">
-          <form class="formulario" id="formulario">
-            <div class="col-3 form-floating mb-3">
-                <select class name>
-                    <option value>Insitucion</option>
-                    <option value>Bachillerato de Artes</option>
-                    <option value>CEPEAC</option>
-                    <option value>Comisaria 5ta</option>
-                    <option value>CCEU</option>
-                </select>
-            </div>
-            <div class="col-3 form-floating mb-3">
-                <input type="text" name="nombre" id="floatingInput" placeholder="nombre" value="Escribe el nombre aqui">
-            </div>
-            <div class="col-3 form-floating mb-3">
-                <select class name>
-                    <option value>Eliminar de la Lista</option>
-                    <option value>Nombre1</option>
-                    <option value>Nombre2</option>
-                    <option value>Nombre3</option>
-                    <option value>Nombre4</option>
-                </select>
-            </div>
-            <div class="col-3">
-                <input type="submit" name="sumar" class="btn btn-primary" value="Sumar al muro">
-            </div>
+<head>
+  <title>Dictadores</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="container-fluid">
+    <div class="col-12">
+      <h1>¿A Quien Consideras Dictador?</h1>
+    </div>
+  </header>
+  <main class="container">
+    <div class="row justify-content-center">
+      <div class="col-2">
+        <form class="formulario" id="formulario">
+          <div class="col-3 form-floating mb-3">
+            <select class name>
+              <option value>Insitucion</option>
+              <option value>Bachillerato de Artes</option>
+              <option value>CEPEAC</option>
+              <option value>Comisaria 5ta</option>
+              <option value>CCEU</option>
+            </select>
+          </div>
+          <div class="col-3 form-floating mb-3">
+            <input type="text" name="nombre" id="floatingInput" placeholder="nombre" value="Escribe el nombre aqui">
+          </div>
+          <div class="col-3 form-floating mb-3">
+            <select class name>
+              <option value>Eliminar de la Lista</option>
+              <option value>Nombre1</option>
+              <option value>Nombre2</option>
+              <option value>Nombre3</option>
+              <option value>Nombre4</option>
+            </select>
+          </div>
+          <div class="col-3">
+            <input type="submit" name="sumar" class="btn btn-primary" value="Sumar al muro">
+          </div>
         </form>
-      <table
-        id="tablaDictadores"
-        class="col-12 table m-2 table-bordered table-striped"
-        background="images/textura-lista.svg"
-        style="text-align: center"
-      >
-        <tbody>
-          <tr>
-            <td>Cristina Fernandez</td>
-          </tr>
-        </tbody>
-      </table>
-      <div class="container-fluid">
-        <div class="col-12">
-          <input
-            name="refresh"
-            id="refrescar"
-            class="btn btn-outline-primary"
-            type="reset"
-            value="Refrescar muro"
-          />
+        <table id="tablaDictadores" class="col-12 table m-2 table-bordered table-striped"
+          background="images/textura-lista.svg" style="text-align: center">
+          <tbody>
+            <tr>
+              <td>Cristina Fernandez</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="container-fluid">
+          <div class="col-12">
+            <input name="refresh" id="refrescar" class="btn btn-outline-primary" type="reset" value="Refrescar muro" />
+          </div>
         </div>
-      </div>
-    </main>
-    <footer></footer>
+  </main>
+  <footer></footer>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/db.js"></script>
-  </body>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="js/db.js"></script>
+</body>
+
 </html>
