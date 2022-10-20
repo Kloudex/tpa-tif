@@ -26,6 +26,7 @@
     </header>
     <main class="container">
       <form class="formulario" id="formulario">
+<<<<<<< HEAD
       <div class="col-3 form-floating mb-3">
         <input
           type="text"
@@ -46,10 +47,33 @@
         />
       </div>
     </form>
+=======
+        <div class="col-12 form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="floatingInput"
+            placeholder="nombre"
+            name="nombre"
+            value="Escribe el nombre aqui"
+          />
+        </div>
+        <div class="col-12">
+          <input
+            name="sumar"
+            id="sumar"
+            class="btn btn-primary"
+            type="submit"
+            value="Sumar al muro"
+          />
+        </div>
+      </form>
+>>>>>>> d1781271b0b208ba10b50d9299205941fdf5a458
       <table
         id="tablaDictadores"
-        class="col-9 table m-2 table-bordered table-striped"
+        class="col-12 table m-2 table-bordered table-striped"
         background="images/textura-lista.svg"
+        style="text-align: center"
       >
         <tbody>
           <tr>
@@ -57,10 +81,16 @@
           </tr>
         </tbody>
       </table>
-      <div class="col-3">
-        <button type="button" class="btn btn-outline-primary">
-          Refrescar lista
-        </button>
+      <div class="container-fluid">
+        <div class="col-12">
+          <input
+            name="refresh"
+            id="refrescar"
+            class="btn btn-outline-primary"
+            type="reset"
+            value="Refrescar muro"
+          />
+        </div>
       </div>
     </main>
     <footer></footer>
