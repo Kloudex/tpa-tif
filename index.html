@@ -21,45 +21,46 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="container">
+    <header class="container-fluid">
       <div class="col-12">
         <h1>¿A Quien Consideras Dictador?</h1>
       </div>
     </header>
     <main class="container">
-      <div class="col-3 form-floating mb-3">
-        <input
-          type="name"
-          class="form-control"
-          id="floatingInput"
-          placeholder="nombre"
-          value="Escribe el nombre aqui"
-        />
-      </div>
-      <div class="col-3">
-        <input
-          name="sumar"
-          id="sumar"
-          class="btn btn-primary"
-          type="button"
-          value="Sumar al muro"
-        />
+      <div class="col-12">
+        <div class="col-3 form-floating mb-3">
+          <input
+            type="name"
+            class="form-control"
+            id="floatingInput"
+            placeholder="nombre"
+            value="Escribe el nombre aqui"
+          />
+        </div>
+        <div class="col-3">
+          <input
+            name="sumar"
+            id="sumar"
+            class="btn btn-primary"
+            type="button"
+            value="Sumar al muro"
+          />
+        </div>
       </div>
       <table
         id="tablaDictadores"
-        class="col-6 table m-2 table-bordered table-striped"
+        class="col-9 table m-2 table-bordered table-striped"
+        background="images/textura-lista.svg"
       >
-        <thead>
-          <tr class="text-center">
-            <th>Dictadores</th>
-            <th>Censurar</th>
+        <tbody>
+          <tr>
+            <td>Cristina Fernandez</td>
           </tr>
-        </thead>
-        <tbody></tbody>
+        </tbody>
       </table>
       <div class="col-3">
         <button type="button" class="btn btn-outline-primary">
-          Eliminar lista
+          Refrescar lista
         </button>
       </div>
     </main>
