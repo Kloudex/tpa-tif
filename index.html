@@ -25,49 +25,32 @@
       </div>
     </header>
     <main class="container">
-      <div class="col-12">
-        <div class="col-3 form-floating mb-3">
+      <form class="formulario" id="formulario">
+        <div class="col-12 form-floating mb-3">
           <input
-            type="name"
+            type="text"
             class="form-control"
             id="floatingInput"
             placeholder="nombre"
+            name="nombre"
             value="Escribe el nombre aqui"
           />
         </div>
-        <div class="col-3">
+        <div class="col-12">
           <input
             name="sumar"
             id="sumar"
             class="btn btn-primary"
-            type="button"
+            type="submit"
             value="Sumar al muro"
           />
         </div>
-      <form class="formulario" id="formulario">
-      <div class="col-3 form-floating mb-3">
-        <input
-          type="name"
-          class="form-control"
-          id="floatingInput"
-          placeholder="nombre"
-          value="Escribe el nombre aqui"
-        />
-      </div>
-      <div class="col-3">
-        <input
-          name="sumar"
-          id="sumar"
-          class="btn btn-primary"
-          type="submit"
-          value="Sumar al muro"
-        />
-      </div>
-    </form>
+      </form>
       <table
         id="tablaDictadores"
-        class="col-9 table m-2 table-bordered table-striped"
+        class="col-12 table m-2 table-bordered table-striped"
         background="images/textura-lista.svg"
+        style="text-align: center"
       >
         <tbody>
           <tr>
@@ -75,10 +58,16 @@
           </tr>
         </tbody>
       </table>
-      <div class="col-3">
-        <button type="button" class="btn btn-outline-primary">
-          Refrescar lista
-        </button>
+      <div class="container-fluid">
+        <div class="col-12">
+          <input
+            name="refresh"
+            id="refrescar"
+            class="btn btn-outline-primary"
+            type="reset"
+            value="Refrescar muro"
+          />
+        </div>
       </div>
     </main>
     <footer></footer>
