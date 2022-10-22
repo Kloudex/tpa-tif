@@ -8,22 +8,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-  <header class="container-fluid">
-    <div class="col-12">
+  <header >
+    <div >
       <h1>¿A Quien Consideras Dictador?</h1>
     </div>
   </header>
-  <main class="container">
-    <div class="row justify-content-center">
-      <div class="col-2">
+  <main>
+    <div>
+      <div>
         <form class="formulario" id="formulario">
-          <div class="col-3 form-floating mb-3">
+          <span>Indica a qué institución perteneces</span>
+          <div>
             <select class name>
               <option value>Insitucion</option>
               <option value>Bachillerato de Artes</option>
@@ -32,10 +31,13 @@
               <option value>CCEU</option>
             </select>
           </div>
-          <div class="col-3 form-floating mb-3">
+          
+          <div class="box">
+            <span>Añade un nombre a la lista</span>
             <input type="text" name="nombre" id="floatingInput" placeholder="nombre" value="Escribe el nombre aqui">
           </div>
-          <div class="col-3 form-floating mb-3">
+          <div>
+            <span>O bien remueve uno ya existente</span>
             <select class name>
               <option value>Eliminar de la Lista</option>
               <option value>Nombre1</option>
@@ -44,23 +46,25 @@
               <option value>Nombre4</option>
             </select>
           </div>
-          <div class="col-3">
-            <input type="submit" name="sumar" class="btn btn-primary" value="Sumar al muro">
+          <div class="box_2">
+            <input type="submit" name="sumar" class="btn btn-primary" value="Modificar muro">
+            <span>Una vez modificado el muro, no olvide refrescarlo.</span>
           </div>
         </form>
-        <table id="tablaDictadores" class="col-12 table m-2 table-bordered table-striped"
-          background="images/textura-lista.svg" style="text-align: center">
-          <tbody>
-            <tr>
-              <td>Cristina Fernandez</td>
-            </tr>
-          </tbody>
-        </table>
-        <div class="container-fluid">
-          <div class="col-12">
-            <input name="refresh" id="refrescar" class="btn btn-outline-primary" type="reset" value="Refrescar muro" />
-          </div>
+       <div class="presidentes">
+         <ul>
+           <li>Cristina Fernandez</li>
+           <li>Mauricio Macri</li>
+           <li>Javier Milei</li>
+           <li>Nicolas del Caño</li>
+         </ul>
+
+
+         <div class="refrescarButton">
+          <input name="refresh" id="refrescar"  type="reset" value="" />
         </div>
+       </div>
+         
   </main>
   <footer></footer>
 
