@@ -1,132 +1,279 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-@font-face {
-  font-family: heyNovemberFont;
-  src: url(../HeyNovember.otf);
+
 }
 
 body {
   background-image: url(../images/textura-fondo.svg);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-repeat: no-repeat;
-  background-size: auto;
 }
 
-header{
+@font-face {
+  font-family: heyNovember;
+  src: url(../HeyNovember.otf);
+}
+
+header {
   background-image: url(../images/textura-fondo-titulo.svg);
-  height: 170px;
-  background-size: cover;
+  height: 130px;
   background-repeat: no-repeat;
 }
 
-h1 {
-  padding-top: 10px ;
-  font-size: 2.5rem;
-  font-weight: 300;
-  margin-bottom: 1rem;
+header h1 {
+  font-family: heyNovember;
+  font-size: 3rem;
   text-align: center;
-  text-transform: uppercase;
-  color: #000000;
-  font-family: heyNovemberFont;
-
 }
 
-main div {
+
+
+.formulario {
+  margin-top: 2;
   display: flex;
-  justify-content: center;
   flex-direction: column;
 }
 
-.formulario {
-  margin: 1rem;
-  width: 100%;
-}
-
 .formulario span {
-  margin-left: 1rem;
-  color: #ffffff;
+  color: white;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: .8rem;
-  text-align: start;
+  font-size: .7rem;
+  margin: 10px;
 }
 
+.formulario .box1 {
+  margin-left: 3rem;
+}
 
-.formulario div select{
-  margin: 1rem;
-  width: 80%;
-  height: 3rem;
-  text-align: center;
+.formulario .box1 select {
+  background-color: white;
   border-radius: 10px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
+  padding: 10px;
+  margin-top: 1rem;
+  width: 60%;
 }
 
-.formulario .box span {
-  color: #ffffff;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: .8rem;
-
+.formulario .box2 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
 }
 
-.formulario .box {
-  margin-left: 1rem;
-}
 
-.formulario .box input{
-  margin: 10px 0;
-  width: 82%;
-  height: 3rem;
-  border-radius: 10px;
-  border: 1px solid #ffffff;
-  color: gray;
-  text-align: center;
+.formulario .box2 input {
   background-color: transparent;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
-}
-
-
-
-
-.formulario div input {
-  margin-left: 2rem;
-  margin-bottom: 15px;
-  background-color: rgb(0, 106, 255);
-  padding: 20px;
-  border: 1px solid rgb(0, 106, 255);
+  width: 60%;
+  padding: 10px;
   border-radius: 10px;
-  width: 70%;
-  color: #ffffff;
-  font-weight: bold;
+  border: 1px solid white;
+  text-align: center;
+  color: rgb(102, 102, 102);
+  margin-top: .8rem;
 }
 
-.presidentes{
+.formulario .box3 {
+  display: flex;
+  margin-left: 3rem;
+  flex-direction: column;
+}
+
+.formulario .box3 select {
+  width: 60%;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: .8rem;
+}
+
+.formulario .box4 {
+  margin-left: 3rem;
+  display: flex;
+  align-items: center;
+  margin: .8rem 0 0.8rem 3rem;
+
+}
+
+
+.formulario .box4 input {
+  background-color: blue;
+  margin: 1rem auto;
+  border: 1px solid blue;
+  border-radius: 10px;
+  padding: 15px;
+  color: white;
+  font-size: .7rem;
+  font-weight: bold;
+  margin-top: .8rem;
+}
+
+.formulario .box4 span {
+  color: rgb(183, 181, 181);
+  font-size: .6rem;
+}
+
+
+
+.presidentes {
   background-image: url(../images/textura-lista.svg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .presidentes ul {
+  padding-top: 1rem;
   list-style: none;
 }
 
 .presidentes ul li {
   text-align: center;
   margin: 2rem 0;
-  font-family: heyNovemberFont;
+  font-family: heyNovember;
   font-size: 1.5rem;
 }
 
-.refrescarButton input{
-background-image: url(../images/arrow.png);
-background-size: cover;
-width: 30px;
-height: 30px;
-background-color: transparent;
-border:  0 ;
-margin: 1rem;
+
+.refrescarButton input {
+  background-image: url(../images/arrow.png);
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 0;
+  position: relative;
+  top: 4rem;
+  left: 2rem;
 }
 
+@media (min-width: 768px){
+ 
+  header {
+      background-image: url(../images/textura-fondo-titulo.svg);
+      width: 100%;
+      height: 200px;
+      background-size: cover;
+      background-repeat: no-repeat;
+  }
+  
+  header h1 {
+      padding-top: 2rem;
+      font-family: heyNovember;
+      font-size: 3rem;
+      text-align: center;
+  }
+  
+
+  .formulario {
+      margin-top: 2;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  
+  .formulario span {
+      color: white;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: .7rem;
+      margin: 10px;
+  }
+  
+  .formulario .box1 {
+      margin-left: 3rem;
+  }
+  
+  .formulario .box1 select {
+      background-color: white;
+      border-radius: 10px;
+      padding: 10px;
+      margin-top: 1rem;
+      width: 100%;
+  }
+  
+  .formulario .box2 {
+      display: flex;
+      flex-direction: column;
+      margin-left: 3rem;
+  }
+  
+  
+  .formulario .box2 input {
+      background-color: transparent;
+      width: 100%;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid white;
+      text-align: center;
+      color: rgb(102, 102, 102);
+      margin-top: .8rem;
+  }
+  
+  .formulario .box3 {
+      display: flex;
+      margin-left: 3rem;
+      flex-direction: column;
+  }
+  
+  .formulario .box3 select {
+      width: 100%;
+      background-color: white;
+      color: black;
+      border-radius: 10px;
+      padding: 10px;
+      margin-top: .8rem;
+  }
+  
+  
+  .formulario .box4 input {
+      background-color: blue;
+      margin: 1rem auto;
+      border: 1px solid blue;
+      border-radius: 10px;
+      padding: 15px;
+      color: white;
+      font-size: .7rem;
+      font-weight: bold;
+      margin-top: .8rem;
+  }
+  
+  .formulario .box4 span {
+      color: rgb(183, 181, 181);
+      font-size: .7rem;
+  }
+  
+  .refrescarButton input {
+      background-image: url(../images/arrow.png);
+      background-size: cover;
+      width: 30px;
+      height: 30px;
+      background-color: transparent;
+      border: 0;
+      position: relative;
+      top: 5rem;
+      left: 6rem;
+  }
+
+
+
+.presidentes ul {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  list-style: none;
+}
+
+.presidentes ul li {
+  text-align: center;
+  margin: 2rem 0;
+  font-family: heyNovember;
+  font-size: 1.5rem;
+}
+  
+
+.presidentes {
+  background-image: url(../images/textura-lista.svg);
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+}
